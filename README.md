@@ -48,3 +48,16 @@ Task for RSS Angular Q2 2026 (FilmList)
 * Code is organized into logical folders - **done** (i guess)
 * Project README is filled in (description, how to run) - **done**
 
+# How to run
+
+## Download
+```sh
+git clone https://github.com/comradeskolopendra/filmlist-q2
+```
+
+## Run
+```sh
+npm i
+ng serve
+```
+
