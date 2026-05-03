@@ -1,0 +1,22 @@
+.page {
+    max-width: 1200px;
+    margin: 16px auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.input {
+    margin-bottom: 24px;
+    widtH: 300px;
+    padding: 16px 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    &:hover {
+        border: 1px solid black;
+    }
+}

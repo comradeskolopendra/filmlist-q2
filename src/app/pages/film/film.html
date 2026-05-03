@@ -1,0 +1,36 @@
+<section class="film">
+    <button [routerLink]="['/']" class="buttonBack">Back</button>
+    <img [src]="currentFilm?.posterUrl" class="poster" [alt]="`poster of ${currentFilm?.title}`" />
+    <ul class="text">
+        <li>
+            <span>
+                <b>Name:</b> {{currentFilm?.title}}
+            </span>
+        </li>
+        <li>
+            <span>
+                <b>Year:</b> {{currentFilm?.year}}
+            </span>
+        </li>
+        <li>
+            <span>
+                <b>Genre:</b> {{currentFilm?.genre}}
+            </span>
+        </li>
+        <li>
+            <span>
+                <b>Rating:</b> {{currentFilm?.rating}} / 10
+            </span>
+        </li>
+        <li>
+            <span>
+                <b>Duration:</b> {{currentFilm?.duration | time}}
+            </span>
+        </li>
+        <li>
+            <span>
+                <b>Description:</b> {{currentFilm?.description}}
+            </span>
+        </li>
+    </ul>
+</section>

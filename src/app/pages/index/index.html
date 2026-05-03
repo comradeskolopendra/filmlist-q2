@@ -1,0 +1,30 @@
+<section class="page">
+    <input 
+        class="input"
+        appAutoFocus 
+        type="text" 
+        [ngModel]="searchQuery()" 
+        (ngModelChange)="searchQuery.set($event)" 
+        placeholder="search"
+    />
+
+    <section class="cards">
+        @for (film of films(); track film.id) {
+            <app-film-card
+                [id]="film.id"
+                [title]="film.title"
+                [description]="film.description"
+                [year]="film.year"
+                [genre]="film.genre"
+                [rating]="film.rating"
+                [duration]="film.duration"
+                [posterUrl]="film.posterUrl"
+                [isFavorite]="film.isFavorite"
+            />
+        }
+    </section>
+
+    @if (films().length === 0) {
+        <p>Nothing found</p>
+    }
+</section>

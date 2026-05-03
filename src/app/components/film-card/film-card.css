@@ -1,0 +1,47 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.content {
+    box-sizing: border-box;
+    padding: 16px;
+
+    width: 100%;
+
+    & button {
+        margin-bottom: 10px;
+        width: fit-content;
+
+        padding: 8px 16px;
+
+        color: white;
+        border-radius: 8px;
+
+        cursor: pointer;
+
+        width: 100%;
+    }
+}
+
+.title {
+    margin: 0;
+}
+
+.poster {
+    width: 100%;
+}
+
+.inFav {
+    background-color: #781414;
+    border: 1px solid #781414;
+}
+
+.notInFav {
+    background-color: black;
+    border: 1px solid black;
+}

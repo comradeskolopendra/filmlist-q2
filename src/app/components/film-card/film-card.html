@@ -1,0 +1,16 @@
+<article class="card" (click)="handleNavigateFilm(id())">
+    <img [src]="posterUrl()" [alt]="title()" class="poster" />
+    <div class="content">
+        <h2 class="title">{{ title() }}</h2>
+        <p class="year">{{ year() }}</p>
+        <p class="genre">{{ genre() }}</p>
+        <p class="rating">{{ rating() }} / 10</p>
+
+        <button 
+            (click)="handleAddFavorite($event, id())" 
+            [ngClass]="isFavorite() ? 'inFav' : 'notInFav'"
+        >
+            {{isFavorite() ? "favorite" : "default"}}
+        </button>
+    </div>
+</article>

@@ -1,59 +1,50 @@
 # IntroTask
+Task for RSS Angular Q2 2026 (FilmList)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.5.
+## Components
 
-## Development server
+* Film card accepts data via input() - **done**
+* Film card notifies parent via output() - **not done**
+* Film list is rendered using @for - **done**
+* Conditional rendering via @if ("Nothing found") - **done**
+* Details page shows full film information - **done**
+* Header, Breadcrumbs, and Footer are present on every page - **1/2 done** (breadcrumbs not implemented)
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+## Routing
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* At least 2 routes configured - **done**
+* Navigation via routerLink - **1/2 done** (i used Router service navigate function instead of [\routerLink\] sometimes)
+* URL parameter is correctly read on the details page - **done**
+* Wildcard route is handled - **done**
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Directive
 
-```bash
-ng generate component component-name
-```
+* Custom attribute directive created as standalone - **done**
+* Sets focus on the element when it appears - **done**
+* Applied to the search field - **done**
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+## Pipe
 
-## Building
+* Custom pipe created as standalone - **done**
+* Converts minutes into a human-readable duration format - **done**
+* Used in the template of at least one component - **done**
 
-To build the project run:
 
-```bash
-ng build
-```
+## Service and Signals
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+* Service is registered globally - **done**
+* Data is stored in signal() - **done**
+* Filtering is implemented via computed() - **done**
+* Search by title works - **done**
 
-## Running unit tests
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Code Quality
 
-```bash
-ng test
-```
+* TypeScript strict mode enabled - **done**
+* No linter errors - **done**
+* Code is organized into logical folders - **done** (i guess)
+* Project README is filled in (description, how to run) - **done**
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
