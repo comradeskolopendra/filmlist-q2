@@ -1,4 +1,4 @@
-import { Directive, ElementRef, inject, AfterViewInit } from '@angular/core';
+import { Directive, ElementRef, inject } from '@angular/core';
 
 @Directive({
   selector: '[appAutoFocus]',

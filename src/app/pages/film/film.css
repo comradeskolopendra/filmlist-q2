@@ -2,12 +2,15 @@
     width: 450px;
 }
 
-.film {
+.page {
     max-width: 1200px;
     margin: 0 auto;
+}
 
+.film {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 16px;
 }
 
 .buttonBack {

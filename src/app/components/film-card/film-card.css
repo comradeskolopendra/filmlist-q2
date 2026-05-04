@@ -11,8 +11,6 @@
     box-sizing: border-box;
     padding: 16px;
 
-    width: 100%;
-
     & button {
         margin-bottom: 10px;
         width: fit-content;

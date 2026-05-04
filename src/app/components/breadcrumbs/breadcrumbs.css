@@ -1,0 +1,13 @@
+.breadcrumbs {
+    margin: 16px auto;
+    max-width: 1200px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.current {
+    text-decoration: underline;
+}

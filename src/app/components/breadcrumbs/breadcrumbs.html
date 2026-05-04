@@ -1,3 +1,11 @@
-<section>
-    Breadcrumbs: Not implemented :(
+<section class="breadcrumbs">
+    @for (item of breadcrumbs(); track item.url) {
+        @if ($index !== breadcrumbs().length - 1) {
+            <a [routerLink]="item.url" class="link">
+                {{item.label}}
+            </a> / 
+        } @else {
+            <span class="current">{{item.label}}</span>
+        }
+    }
 </section>

@@ -4,6 +4,7 @@ import { FilmCard } from '../../components/film-card/film-card';
 import { Films } from '../../services/films';
 import { FormsModule } from '@angular/forms';
 import { AutoFocus } from '../../directives/auto-focus';
+import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs';
 
 @Component({
   selector: 'app-index',
@@ -11,7 +12,8 @@ import { AutoFocus } from '../../directives/auto-focus';
     CommonModule,
     FilmCard,
     FormsModule,
-    AutoFocus
+    AutoFocus,
+    Breadcrumbs
   ],
   templateUrl: './index.html',
   styleUrl: './index.css',
@@ -19,8 +21,15 @@ import { AutoFocus } from '../../directives/auto-focus';
 export class Index {
   filmsService = inject(Films);
   searchQuery = signal("");
-  
+
   films = computed(() => {
     return this.filmsService.filterFilms(this.searchQuery())
   })
+
+  breadcrumbs = computed(() => [
+    {
+      label: 'Home',
+      url: '/',
+    }
+  ])
 }

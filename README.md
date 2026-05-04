@@ -8,13 +8,13 @@ Task for RSS Angular Q2 2026 (FilmList)
 * Film list is rendered using @for - **done**
 * Conditional rendering via @if ("Nothing found") - **done**
 * Details page shows full film information - **done**
-* Header, Breadcrumbs, and Footer are present on every page - **1/2 done** (breadcrumbs not implemented)
+* Header, Breadcrumbs, and Footer are present on every page - **done**
 
 
 ## Routing
 
 * At least 2 routes configured - **done**
-* Navigation via routerLink - **1/2 done** (i used Router service navigate function instead of [\routerLink\] sometimes)
+* Navigation via routerLink - **done**
 * URL parameter is correctly read on the details page - **done**
 * Wildcard route is handled - **done**
 

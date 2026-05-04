@@ -1,9 +1,12 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-breadcrumbs',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './breadcrumbs.html',
   styleUrl: './breadcrumbs.css',
 })
-export class Breadcrumbs {}
+export class Breadcrumbs {
+  breadcrumbs = input<{url: string; label: string}[]>([])
+}

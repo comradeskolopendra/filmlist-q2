@@ -6,7 +6,7 @@ import { Breadcrumbs } from "./components/breadcrumbs/breadcrumbs";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, Breadcrumbs],
+  imports: [RouterOutlet, Header, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
